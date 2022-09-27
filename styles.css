@@ -11,7 +11,7 @@
   align-items: center;
 }
 
-h2 {
+h2{
   font-size: medium;
   font-weight: 200;
 }
@@ -20,6 +20,15 @@ h2 {
 /* Classes that you might find useful */
 /* You may also have to implement your own classes */
 
+.label{
+    color: blue;
+}
+
+.label:hover{
+    color: red;
+    font-size: 2em;
+}
+
 .flag {
   height: 300px;
   width: 500px;
@@ -27,11 +36,17 @@ h2 {
   margin-bottom: 5rem;
 }
 
+.vert{
+    display: flex;
+    flex-direction: row;
+}
+
 .twovert {
   height: 50%;
 }
 
 .threevert {
+    height: 33.3%;
 }
 
 .threehoriz {
@@ -59,6 +74,10 @@ h2 {
 
 /* QUESTION 1 */
 
+.red{
+    background-color: red;
+}
+
 .orange {
   background-color: orange;
 }
@@ -75,8 +94,8 @@ h2 {
   background-color: blue;
 }
 
-.lightblue {
-  background-color: lightblue;
+.light-blue {
+  background-color: rgb(0, 146, 221);
 }
 
 .purple {
@@ -91,18 +110,26 @@ h2 {
   background-color: #000;
 }
 
+#white {
+ background-color: white;
+}
 /* BEGIN QUESTION 2 */
 
+
+
 .thailand-red {
-  /* TODO */
+  height: 16.6%;
+  background-color: #B5002D;
 }
 
 .thailand-white {
-  /* TODO */
+  height: 16.6%;
+  background-color: white;
 }
 
 .thailand-blue {
-  /* TODO */
+background-color: #2E2A4C;
+  height: 33.2%
 }
 
 /* END QUESTION 2 */
@@ -129,7 +156,11 @@ h2 {
 }
 
 .mexico-img {
-  /* TODO */
+  background-image: url("eagle.png");
+  background-position: center;
+  self-align: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .mexico-red {
@@ -148,18 +179,26 @@ h2 {
 
 /* For margin practice */
 .flag1 {
+  height: 300px;
+  width: 500px;
+  border-style: solid;
+  margin-bottom: 5rem;
   background-color: red;
-  /* TODO */
+  margin-right: 5px;
 }
 
 .flag2 {
   background-color: blue;
-  /* TODO */
+  height: 300px;
+  width: 500px;
+  border-style: solid;
+  margin-bottom: 5rem;
+  margin-left: 5px;
 }
 /* For padding practice */
 .padding-container {
   box-sizing: border-box;
   background-color: lightblue;
   background-clip: content-box, padding-box;
-  /* TODO */
+  padding: 60px;
 }
